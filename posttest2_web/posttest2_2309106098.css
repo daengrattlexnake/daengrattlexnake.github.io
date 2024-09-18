@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #987043;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.454);
+    overflow: hidden;
+    padding: 20px;  
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.id-pemesanan {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nomor-order {
+    color: #888;
+    font-size: 14px;
+}
+
+.customer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.status-pemesanan {
+    background-color: #00c6ff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.nama-customer {
+    font-size: 16px;
+    font-weight: bold;
+    color: #6a1b9a;
+}
+
+
+.order-item {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.nama-item {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.harga-item {
+    float: right;
+    font-size: 16px;
+}
+
+.item-detail, .catatan-item {
+    font-size: 14px;
+    color: #555;
+}
+
+.catatan-item {
+    background-color: #fef4e0;
+    padding: 5px;
+    border-radius: 5px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.nomor-antrian {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nomor-antrian h1 {
+    font-size: 36px;
+    margin-top: 5px;
+    color: #333;
+}
+.gambar{
+    width: 50px;
+
+}
+
