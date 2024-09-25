@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website Cuci Sepatu</title>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <link rel="stylesheet" href="styles/home.css">
+    </head>
+    <body>
+        <nav class="navbar-section">
+            <a href="index.html">
+                <img src="assets/logo-cuci-sepatu.jpg" alt="Logo Cuci Sepatu" width="50" height="50">
+            </a>
+
+            <menu class="navbar-list" id="navbar-list">
+                <li class="navbar-item">
+                    <a href="index.html">
+                        HOME
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#about">
+                        ABOUT ME
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <button class="moon" onclick="myFunction()">
+                        <i data-feather="moon"></i>
+                    </button>
+                </li>
+            </menu>
+            <button class="hamburger" id="hamburger">
+                <i data-feather="menu"></i>
+            </button>
+        </nav>
+
+        <main class="hero-section">
+            <img src="assets/background-sepatu.jpg" alt="background-sepatu" class="hero-image" />
+      
+            <div class="hero-container">
+              <hgroup>
+                <h1 class="hero-title">
+                  Get Your Shoes Clean <br />
+                </h1>
+      
+                <p class="hero-description">
+                  Bersihkan sepat secepat kilat <br />
+                  hanya di Shoes Laundry
+                </p>
+              </hgroup>
+            </div>
+          </main>
+
+          <footer class="footbar-section">
+            <div class="footbar-item" id="about">
+                <h1>ABOUT ME</h1>
+                <p>Nama saya MUHAMMAD KHEMAL ARSENIO BOHARI dari C1'23 <br>
+                    Dengan NIM 2309106098
+                </p>
+            </div>
+          </footer>
+
+        <script>
+            function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+            }
+        </script>
+
+        <script>
+            feather.replace();
+        </script>       
+    </body>
+    <script src="/app.js/script.js"></script>
+</html>
