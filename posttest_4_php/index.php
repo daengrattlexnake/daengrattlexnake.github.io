@@ -70,7 +70,7 @@
 
     <section id="contact">
         <h2>Suggestion Box</h2>
-        <form method="POST" action="process.php">
+        <form method="POST" action="index.php">
             <label for="name">Nama:</label>
             <input type="text" id="name" name="name" required>
             <br>
@@ -121,10 +121,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Subject = 'Pesan dari website Anda';
         $mail->Body = "Nama: $name\nEmail: $email\nPesan:\n$message";
 
+        $result = mysqli_query($conn, "SELECT * FROM form_submissions ORDER BY id DESC LIMIT 1");
+        $row = mysqli_fetch_assoc($result);
+
+
         if (!$mail->send()) {
             echo 'Pesan gagal dikirim: ' . $mail->ErrorInfo;
         } else {
-            echo 'Pesan terkirim!';
+            echo "Terima kasih atas pesan Anda, " . $row['name'] . "!";
+            echo "<p>" . $row['message'] . "</p>";
         }
     }
 }
