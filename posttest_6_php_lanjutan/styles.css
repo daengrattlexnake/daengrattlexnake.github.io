@@ -1,0 +1,254 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 20px;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color: rgba(50, 190, 255, 0.806);
+}
+
+.navbar .logo-img {
+    position: absolute;
+    left: 20px;
+}
+
+.navbar h1 {
+    display: inline;
+    color: white;
+    margin: 0; 
+    font-family: Shrikhand, serif;
+    padding-left: 50px; 
+    padding-right: 50px; 
+}
+
+.navbar ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .container h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .nav-links {
+    padding: 0px 0px;
+}
+
+.nav-links ul li a:hover {
+    color: #4a3535;
+    transition: 0.4s;
+    box-shadow: inset 100px 0 0 0 #fff;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .services-box {
+    width: 30%; 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .services-box img {
+    width: 100%;
+  }
+  
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5ms ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+#preloader img {
+    width: 400px;
+}
+
+body.loaded #preloader {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
+}
+
+body.loaded #preloader {
+    display: none;
+}
+
+section {
+    height: 100vh;
+    padding: 50px;
+    text-align: center;
+}
+
+section#home {
+    background-color: white;
+}
+
+section#services {
+    background-color: white;
+}
+
+section#about {
+    background-image: url(assets/pict2.jpg);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(100%);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#contact {
+    background-color: white;
+}
+
+#contact form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: rgb(0, 151, 251);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#home {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Spicy Rice, static;
+    font-size: 45px;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/background-sepatu.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    filter: brightness(55%);
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+#home h2,
+#home p {
+    position: relative;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 2px 0;
+}
+
+#about h2 {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
